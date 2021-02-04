@@ -25,7 +25,7 @@ jobs:
         node-version: ${{ matrix.node-version }}
 
     - name: rename main js
-      run: mv build/static/js/main.*.*.js build/stati/js/main.js
+      run: mv build/static/js/main.*.*.js build/static/js/main.js
       
     - name: rename runtime-main js
       run: mv build/static/js/runtime-main.*.js build/stati/js/runtime-main.js
