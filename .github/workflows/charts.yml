@@ -5,16 +5,16 @@ name: React Charts Build
 
 on:
   push:
-    branches: react
+    branches: [react]
   pull_request:
-    branches: react
+    branches: [react]
 
 jobs:
   build:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        node-version: 12.13
+        node-version: [12.x]
 
     steps:
     - uses: actions/checkout@v2
