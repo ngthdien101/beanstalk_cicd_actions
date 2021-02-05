@@ -28,10 +28,10 @@ jobs:
       run: mv ./react-charts/build/static/js main.js
       
     - name: rename runtime-main js
-      run: mv ./react-charts/build/static/js runtime-main.js
+      run: runtime-main.js
       
     - name: rename chunk js
-      run: mv ./react-charts/build/static/js app.js
+      run: app.js
       
     - name: Generate deployment package
       run: zip -r deploy.zip * -x "**node_modules**"
